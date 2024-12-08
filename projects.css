@@ -1,0 +1,52 @@
+@charset "ISO-8859-1";
+html{
+background:rgb(0,0,0) fixed;
+}
+.data{
+    justify-content:center;
+    align-items:center;
+     
+}
+.data > h1 {
+	text-align: center;
+    margin-top: 8px;
+    font-family: 'Shadows Into Light Two'; 
+    font-size: 280%;
+    color: white;
+    text-shadow:0 0 30px rgba(255,0,0,1); 
+                   
+}
+.data >h2{
+	margin-top: 10px;
+    font-family: 'Shadows Into Light Two'; 
+    font-size: 200%;
+    color: white;
+    text-shadow:0 0 10px rgba(255,0,0,1);
+}
+
+
+.container {
+	font-family: 'Shadows Into Light Two'; 
+	color: white;
+}
+.key-points {
+    list-style-type: none;
+    padding: 0;
+}
+
+.key-points li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.icon {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.point {
+	font-size:130%;
+    color: white;
+}
+

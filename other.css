@@ -1,0 +1,89 @@
+@charset "ISO-8859-1";
+html{
+background:rgb(0,0,0) fixed;
+}
+.firstimg{
+	position:absolute;
+	width: 70x; 
+    height: 400px;
+    top:60px;
+}
+.first>h1{
+	position: absolute;
+    top: 10px;
+    left:190px;
+    font-family: 'Shadows Into Light Two'; 
+    font-size: 300%;
+    color: white;
+    text-shadow:0 0 10px rgba(255,0,0,1);
+}
+.secondimg{
+    position:absolute;
+	width: 70x; 
+    height: 270px;
+    top:140px;
+    margin-left: 63%;
+}
+.second>h1{
+	position: absolute;
+    top:10px;
+    left:60%;
+    font-family: 'Shadows Into Light Two'; 
+    font-size: 300%;
+    color: white;
+    text-shadow:0 0 10px rgba(255,0,0,1);
+}
+
+.container {
+	font-family: 'Shadows Into Light Two'; 
+	color: white;
+    position: absolute;
+    top : 420px;
+    margin-right:60%;
+}
+.key-points {
+    list-style-type: none;
+    padding: 0;
+}
+
+.key-points li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.icon {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.point {
+	font-size:200%;
+    color: white;
+}
+.container2 {
+	font-family: 'Shadows Into Light Two'; 
+	color: white;
+    position: absolute;
+    top:420px;
+    margin-left: 60%;
+    margin-right: 5%;
+}
+.data {
+  color: white; 
+  width: 190px;
+  height: 100px;
+  background: linear-gradient(83deg, rgba(17,17,52,1) 0%, rgba(66,21,29,1) 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;	
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position:absolute;
+  top: 10%;
+  left:43%;
+}
+
+
