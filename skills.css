@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    background: black;
+}
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     color: #000000;
     line-height: 1.6;
     display: flex;
@@ -18,6 +19,7 @@ header {
     text-align: center;
     padding: 20px;
     background-color: #000000;
+    border: 3px solid white;
     color: #fff;
     width: 100%;
 }
@@ -35,6 +37,7 @@ header p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background: black;
     gap: 20px;
     padding: 40px 20px;
     width: 100%;
@@ -42,18 +45,56 @@ header p {
 }
 
 .skill-card {
-    background-color: #0e173c;
+    position: relative;
+    background-color: black;
     width: 250px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 1;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-}
+  }
+  
+  .skill-card::before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+    background: rgb(233, 233, 6);
+    animation: rotate 4s linear infinite;
+    z-index: -2;
+    border-radius: 20px;
+  }
+  
+  .skill-card::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    background-color: black;
+    z-index: -1;
+    border-radius: 10px;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
 
 .skill-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border: 4px solid rgb(39, 168, 74);
 }
 
 .skill-card h2 {
@@ -75,10 +116,3 @@ header p {
     margin-bottom: 8px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    width: 100%;
-}
