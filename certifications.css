@@ -51,6 +51,7 @@ header p {
     text-align: center;
     overflow: hidden;
     z-index: 1;
+    border: 2px solid white;
     width: 40%;
     transition: transform 1s ease, box-shadow 0.3s ease, border 0.3s ease, width 0.3s ease;
 }

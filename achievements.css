@@ -52,6 +52,7 @@ header p {
     overflow: hidden;
     z-index: 1;
     width: 40%;
+    border: 2px solid white;
     transition: transform 1s ease, box-shadow 0.3s ease, border 0.3s ease, width 0.3s ease;
 }
 .achievement-card::before {
