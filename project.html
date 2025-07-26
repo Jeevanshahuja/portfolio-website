@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile - Jeevansh Ahuja</title>
-    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="projects.css">
 </head>
 <body>
     <header>
@@ -13,23 +13,14 @@
     </header>
 
     <section class="projects-section">
-        <div class="project-card">
-            <h2>COVID-19 Vaccine Analysis</h2>
-            <p class="technologies">(Matplotlib, Pandas, NumPy, Seaborn, Tableau, Excel) | <a href="https://jeevanshahuja.github.io/covid-project-live/" target="_blank">Link</a></p>
-            <ul>
-                <li>Conducted comprehensive analysis on the distribution of COVID-19 vaccines across Indian states.</li>
-                <li>Identified correlations between vaccine doses administered and age groups of vaccinated individuals.</li>
-                <li>Examined global data to ascertain correlations between test cases, fatalities, and recoveries worldwide.</li>
-            </ul>
-        </div>
 
         <div class="project-card">
-            <h2>Uber Dataset Analysis</h2>
-            <p class="technologies">(Python, Pandas, NumPy, Matplotlib, Seaborn) | <a href="https://jeevanshahuja.github.io/Uber-project-live/" target="_blank">Link</a></p>
+            <h2>Multilingual Transliteration Model</h2>
+            <p class="technologies">(Python, mBART, OpenNMT, BLEU, CHRF, TER)</p>
             <ul>
-                <li>Analyzed Uber ride data across NYC boroughs to identify hourly ride patterns and peak demand times.</li>
-                <li>Assessed the impact of weather conditions on ride frequencies, including temperature, wind speed, visibility, and precipitation.</li>
-                <li>Developed insights into seasonal trends, holiday impacts, and key metrics such as total pickups, correlations between pickups and weather factors, and peak hours in each borough.</li>
+                <li>Fine-tuned Facebook's mBART model for Indian language transliteration, achieving BLEU: 66.29, CHRF: 82.18, TER: 23.95.</li>
+                <li>Processed and cleaned 300K+ entries with character-level modeling and optimized inference latency.</li>
+                <li>Integrated preprocessing, validation, and evaluation pipelines with OpenNMT-py for reproducibility and deployment.</li>
             </ul>
         </div>
 
@@ -37,11 +28,34 @@
             <h2>Toxic Comment Classifier</h2>
             <p class="technologies">(Python, TF-IDF, CNN) | <a href="https://jeevanshahuja.github.io/Toxic-live/" target="_blank">Link</a></p>
             <ul>
-                <li>Developed a model for toxic comment classification achieving 95% accuracy on benchmark datasets.</li>
-                <li>Implemented a 1D CNN model following TF-IDF vectorization for initial classification.</li>
-                <li>Achieved high statistics surpassing previous researches.</li>
+                <li>Built a robust toxic comment classification model using TF-IDF and a 1D CNN architecture, achieving 95% accuracy.</li>
+                <li>Designed for real-time deployment with low-latency inference, suitable for chat systems and forums.</li>
+                <li>Surpassed several baselines in accuracy and F1 score through extensive tuning and error analysis.</li>
             </ul>
         </div>
+        
+        <div class="project-card">
+            <h2>COVID-19 Vaccine Analysis</h2>
+            <p class="technologies">(Matplotlib, Pandas, NumPy, Seaborn, Tableau, Excel) | <a href="https://jeevanshahuja.github.io/covid-project-live/" target="_blank">Link</a></p>
+            <ul>
+                <li>Analyzed 7.6K+ rows across 24 attributes to uncover COVID-19 vaccine distribution inequalities in Indian states.</li>
+                <li>Utilized heatmaps, bar graphs, and box plots to detect state-wise gaps in dose administration and age-wise prioritization.</li>
+                <li>Recommended 3 regional policy changes based on data-backed insights to ensure equitable distribution.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h2>Uber Dataset Analysis</h2>
+            <p class="technologies">(Python, Pandas, NumPy, Matplotlib, Seaborn) | <a href="https://jeevanshahuja.github.io/Uber-project-live/" target="_blank">Link</a></p>
+            <ul>
+                <li>Processed 29K+ Uber ride records across NYC to extract patterns in hourly demand and borough-wise usage.</li>
+                <li>Analyzed weather-related features like temperature, wind speed, and precipitation to find correlations with pickup rates.</li>
+                <li>Optimized peak hour prediction models with a 40% faster runtime compared to baseline approaches.</li>
+            </ul>
+        </div>
+
+        
+
     </section>
 </body>
 </html>

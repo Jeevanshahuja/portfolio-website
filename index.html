@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeevansh Ahuja - Portfolio</title>
     <link rel="stylesheet" href="Main.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WZXBKMX47B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WZXBKMX47B');
+    </script>
 </head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WZXBKMX47B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-WZXBKMX47B');
-</script>
 <body>
-	
+    <div class="background-grid"></div>
+
     <nav>
         <ul>
             <li><a href="skills.html">Skills</a></li>
@@ -22,52 +23,41 @@
             <li><a href="project.html">Projects</a></li>
             <li><a href="achievements.html">Achievements</a></li>
             <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="RESUME.pdf" target="_blank" >Resume</a></li>
+            <li><a href="JEEVANSH RESUME - Main.pdf" target="_blank">Resume</a></li>
         </ul>
-        
     </nav>
-    <div class = "header">
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/jeevanshahuja" target="_blank">
-                <div class="social-logo">
-                    <img src="li logo.png" alt="LinkedIn" class = "social-logo-img" >
-                    LinkedIn
-                </div>
-            </a>
-            <a href="https://codolio.com/profile/Jeevansh">
-                <div class="social-logo">
-                    <img src="codolio.png" alt="codolio" class="social-logo-img">
-                    Codolio
-                </div>
-            </a>
-            <a href="https://github.com/jeevanshahuja" target="_blank">
-                <div class="social-logo">
-                    <img src="git.png" alt="GitHub" class="social-logo-img">
-                    GitHub
-                </div>
-            </a>
-            <a href="https://leetcode.com/u/jeevanshahuja/">
-                <div class="social-logo">
-                    <img src="leet.png" alt="leetcode" class="social-logo-img">
-                    LeetCode
-                </div>
-            </a>
-            
-        </div>
-        
-        
+
+    <main class="main-content">
         <div class="profile-container">
-            <div class="profile-content">
-                <div class = "profile-img">
-                    <img src="me.png" alt="Jeevansh Ahuja">
-                </div>
-                <div class="header-text">
-                    <h1>Jeevansh Ahuja</h1>
-                    ( jeevanshahuja@gmail.com )<br>
-                        Data Science Enthusiast
-                </div>
+            <div class="profile-img-wrapper">
+                <img src="me.jpg" alt="Jeevansh Ahuja">
+            </div>
+            <div class="header-text">
+                <h1 data-text="Jeevansh Ahuja">Jeevansh Ahuja</h1>
+                <p class="subtitle">( jeevanshahuja@gmail.com )</p>
+                <p class="typing-effect">Data Science Enthusiast</p>
             </div>
         </div>
-    </div>
+
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/jeevanshahuja" target="_blank" class="social-link">
+                <img src="li logo.png" alt="LinkedIn" class="social-logo-img">
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://codolio.com/profile/Jeevansh" target="_blank" class="social-link">
+                <img src="codolio.png" alt="Codolio" class="social-logo-img">
+                <span>Codolio</span>
+            </a>
+            <a href="https://github.com/jeevanshahuja" target="_blank" class="social-link">
+                <img src="git.png" alt="GitHub" class="social-logo-img">
+                <span>GitHub</span>
+            </a>
+            <a href="https://leetcode.com/u/jeevanshahuja/" target="_blank" class="social-link">
+                <img src="leet.png" alt="LeetCode" class="social-logo-img">
+                <span>LeetCode</span>
+            </a>
+        </div>
+    </main>
+
 </body>
 </html>
